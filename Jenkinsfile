@@ -9,6 +9,12 @@ node {
     }
 
     stage('Deploy') {
+    try {
+        input('ㅂㅐ포하나욤??')
+        println 'Deploy Start'
+    } catch (Exception e) {
+        println 'Deploy Skip'
+    }
         sh "echo 'Deply AWS'"
     }
 }
