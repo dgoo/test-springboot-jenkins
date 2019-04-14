@@ -13,7 +13,7 @@ node {
         input('ㅂㅐ포하나욤??')
         println 'Deploy Start'
     } catch (Exception e) {
-        currentBuild.result = 'FAILURE'
+        error('Deploy is aborted by the user')
         println 'Deploy Skip'
     }
         sh "echo 'Deply AWS'"
