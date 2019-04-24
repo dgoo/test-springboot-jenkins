@@ -1,4 +1,4 @@
-node('slave01') {
+node {
     stage('Ready') {
         sh "echo 'Ready'"
     }
