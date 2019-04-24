@@ -4,7 +4,7 @@ node {
     }
 
     stage('Build') {
-        sh './gradlew clean print'
+        sh './gradlew'
         sh "echo 'Build Jar'"
     }
 
